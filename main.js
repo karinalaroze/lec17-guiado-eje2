@@ -27,4 +27,16 @@
 
  //forma imperativa 
 
+ var computadore = [];
+ for(var i = 0; i < productos.length; i++){
+  if (productos[i].tipo === 'computador') {
+    computadore.push(productos[i]);
+  }
+ }
+
+ //forma con metodo filter
+
+ var computadores = productos.filter(function(producto){
+  return producto.tipo === 'computador';
+ }); 
  
